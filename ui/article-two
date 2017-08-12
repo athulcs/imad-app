@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>
+        Article One | Athul
+        </title>
+        <meta name="viewport" content="width=device-width , initial-scale=1"/>
+    </head>
+        <body>
+            <div>
+                <a href='/'>Home</a>
+            </div>
+            <div>
+                <h1>Article One</h1>
+            </div>
+            <div>
+                Aug 12,2017
+            </div>
+            <div>
+                <p>Yooo man,OMKV OMKV OMKV</p>
+                <p>Yooo man,OMKV OMKV OMKV</p>
+                <p>Yooo man,OMKV OMKV OMKV</p>
+                <p>Yooo man,OMKV OMKV OMKV</p>
+            </div>
+        </body>
+    
+</html>
