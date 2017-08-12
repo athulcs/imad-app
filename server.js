@@ -6,7 +6,7 @@ var app = express();
 var articleOne={
 title:'Article One|Athul',
 heading:`Article One`,
-content:` <p>Yooo man,OMKV OMKV OMKV</p>
+content:`               <p>Yooo man,OMKV OMKV OMKV</p>
                         <p>Yooo man,OMKV OMKV OMKV</p>
                         <p>Yooo man,OMKV OMKV OMKV</p>
                         <p>Yooo man,OMKV OMKV OMKV</p>`
