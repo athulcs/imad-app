@@ -1,1 +1,1 @@
-alert("kemam");
+console('Loaded');
