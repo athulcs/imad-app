@@ -1,1 +1,1 @@
-console.log('Loadeddddd!');
+alert("kemam");
