@@ -8,10 +8,20 @@ img.style.marginLeft=marginLeft+'px';
     img.onclick = function() {
     var interval = setInterval(moveRight,50);
 };
+
 var button =document.getElementById('counter');
-var counter=0;
+
 button.onclick = function() {
-    counter = counter +1;
-    var span =document.getElementById('count');
-    span.innerHTML=counter.toString();
+
+var request=new XMLhttpRequest();
+request.onreadystateChange = function(){
+    if(request.readystate === XMLhttpRequest.DONE){
+        if(request.status === 200){
+            var counetr=request.responseText;
+            var span =document.getElementById('count');
+            span.innerHTML=counter.toString();
+        }
+    }
+};
+
 };
