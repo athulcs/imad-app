@@ -33,7 +33,7 @@ content:`               <p>Yooo man,OMKV OMKV OMKV</p>
 
 app.get('/counter',function (req,res) {
 counter =counter+1;
-res.send(counter,toString());
+res.send(counter.toString());
 });
 
 function createTemplate(data){
