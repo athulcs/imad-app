@@ -17,7 +17,7 @@ var request=new XMLhttpRequest();
 request.onreadystateChange = function(){
     if(request.readystate === XMLhttpRequest.DONE){
         if(request.status === 200){
-            var counetr=request.responseText;
+            var counter=request.responseText;
             var span =document.getElementById('count');
             span.innerHTML=counter.toString();
         }
