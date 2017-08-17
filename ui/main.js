@@ -23,5 +23,6 @@ request.onreadystateChange = function(){
         }
     }
 };
-
+request.open('GET','http://athulcscs.imad.hasura-app.io/counter',true);
+request.send(null);
 };
