@@ -2,10 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var counter=0;
-app.get('/counter',function (req,res) {
-counter =counter+1;
-res.send(counter,toString());
-});
+
 var app = express();
 var articles={
 'article-one' :{ 
@@ -33,6 +30,12 @@ content:`               <p>Yooo man,OMKV OMKV OMKV</p>
                         <p>Yooo man,OMKV OMKV OMKV</p>`
 }  
 };
+
+app.get('/counter',function (req,res) {
+counter =counter+1;
+res.send(counter,toString());
+});
+
 function createTemplate(data){
 var title=data.title;
 var heading=data.heading;
