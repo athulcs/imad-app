@@ -47,7 +47,7 @@ pool.query('SELECT * FROM test',function(arr,result){
         res.status(500).send(arr.toString());
         }
     else{
-        res.send(JSON.stringify(result));
+        res.send(JSON.stringify(result.rows));
     }    
 });
 });
