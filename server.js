@@ -40,6 +40,8 @@ content:`               <p>Yooo man,OMKV OMKV OMKV</p>
 };
 
 var pool =new Pool(config);
+
+app.get('/test-db',function (req,res) {
 pool.query('SELECT * FROM test',function(arr,result){
     if (arr){
         res.status(500).send(arr.toString());
@@ -48,8 +50,6 @@ pool.query('SELECT * FROM test',function(arr,result){
         res.send(JSON.stringify(result));
     }    
 });
-app.get('/test-db',function (req,res) {
-res.send(counter.toString());
 });
 
 app.get('/counter',function (req,res) {
