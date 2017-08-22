@@ -2,7 +2,15 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var counter=0;
+var Pool = require('pg').Pool;
 
+var config = {
+    user :	'athulcscs',
+    database : 'athulcscs',
+    host:'http://db.imad.hasura-app.io',
+    port:'5432',
+    password: process.env.DB_PASSWORD
+};
 var app = express();
 var articles={
 'article-one' :{ 
@@ -30,6 +38,19 @@ content:`               <p>Yooo man,OMKV OMKV OMKV</p>
                         <p>Yooo man,OMKV OMKV OMKV</p>`
 }  
 };
+
+var pool =new Pool(config);
+pool.query('SELECT * FROM test',function(arr,result){
+    if (arr){
+        res.status(500).send(arr.toString());
+        }
+    else{
+        res.send(JSON.stringify(result));
+    }    
+})
+app.get('/test-db',function (req,res) {
+res.send(counter.toString());
+});
 
 app.get('/counter',function (req,res) {
 counter =counter+1;
