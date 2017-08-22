@@ -47,7 +47,7 @@ pool.query('SELECT * FROM test',function(arr,result){
     else{
         res.send(JSON.stringify(result));
     }    
-})
+});
 app.get('/test-db',function (req,res) {
 res.send(counter.toString());
 });
